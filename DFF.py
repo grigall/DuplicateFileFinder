@@ -1,7 +1,7 @@
 #UI Imports
 from PyQt5.QtWidgets import QWidget, QFrame, QGridLayout, QApplication, QPushButton, QLabel, QFileDialog
 #from PyQt5.QtGui import QPixmap
-from PyQt5 import QtGui, QtCore
+from PyQt5 import QtCore
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QCursor
 import sys
@@ -19,9 +19,9 @@ import os
 #pd.set_option('display.max_columns', None)
 
 ###Path variables
-#DEFAULT_SAVE_PATH = os.path.expanduser('~\Documents')
-#LT_PATH = r'C:\Users\ML2021\Documents\Projects\Python\Test_Dir\T1'
-#RT_PATH = r'C:\Users\ML2021\Documents\Projects\Python\Test_Dir\T2'
+DEFAULT_SAVE_PATH = os.path.expanduser('~\Documents')
+PATH_MAIN = ''
+PATH_COMP = ''
 
 class UI(QWidget):
     def __init__(self):
@@ -64,7 +64,7 @@ class UI(QWidget):
         compLabel.setText('Comp Directory HERE')
 
         #Add Buttons
-        button1 = self.addButton('Main Directory','Button1', None, lambda: print('Main Directory'))
+        button1 = self.addButton('Main Directory','Button1', None, lambda: selectDirectory(PATH))
         button2 = self.addButton('Comparison Directory','Button2', None, lambda: print('Comparison Directory'))
         exitButton = self.addButton('\u2715', 'ExitButton', 'Exit Application', lambda: sys.exit(app.exec()))
         exportButton = self.addButton('Export Results', 'ExportButton', 'Export List to File', lambda: print('Exported!'))
@@ -99,12 +99,12 @@ class UI(QWidget):
             sheet = file.read()
             self.setStyleSheet(sheet)
 
-    def clicker(self):
-        file = str(QFileDialog.getExistingDirectory(self, "Select Directory"))
+    def selectDirectory(self, targetPath):
+        file = str(QFileDialog.getExistingDirectory(self, "Select Directory", DEFAULT_SAVE_PATH))
         if file:
-            self.label.setText(str(file))
+            targetPath = file
+            print(targetPath)
 
-            self.b1.clicked.connect(self.clicked)
 
     #def clicked(self):
         #self.label.setText('New Text that is too big for the button!')
