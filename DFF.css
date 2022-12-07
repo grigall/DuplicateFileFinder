@@ -1,0 +1,88 @@
+#MainWindow {
+    border: none;
+    border-radius: 40px;
+}
+
+#MainFrame {
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(12, 14, 16, 0.941);
+}
+
+#MenuLabel {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#MainDirectory {
+    border: 2px solid rgba(72, 84, 95, 1);
+    border-radius: 20px;
+    background-color: rgba(21, 24, 27, .9);
+    margin: 10px 10px 10px 20px;
+    padding: 4px;
+    color: whitesmoke;
+}
+
+#CompDirectory {
+    border: 2px solid rgba(72, 84, 95, 1);
+    border-radius: 20px;
+    background-color: rgba(21, 24, 27, .9);
+    margin: 10px 20px 10px 10px;
+    padding: 4px;
+    color: whitesmoke;
+}
+
+/* Buttons */
+#Button1 {
+    border: 2px solid rgba(21, 24, 27, 1);
+    border-radius: 10px;
+    background-color: rgba(72, 84, 95, 1);
+    color:rgba(21, 24, 27, 1);
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px 10px 10px 20px;
+}
+
+#Button2 {
+    border: 2px solid rgba(21, 24, 27, 1);
+    border-radius: 10px;
+    background-color: rgba(72, 84, 95, 1);
+    color:rgba(21, 24, 27, 1);
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px 20px 10px 10px;
+}
+
+#ExitButton {
+    border: none;
+    color:whitesmoke;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+}
+
+#ExportButton {
+    border: 2px solid rgba(21, 24, 27, 1);
+    border-radius: 10px;
+    background-color: rgba(72, 84, 95, 1);
+    color:rgba(21, 24, 27, 1);
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 20px 10px 20px;
+}
+
+#Button1:hover {
+    background-color: whitesmoke;
+}
+
+#Button2:hover {
+    background-color: whitesmoke;
+}
+
+#ExitButton:hover {
+    color: rgb(255, 0, 128);
+}
+
+#ExportButton:hover {
+    color: whitesmoke;
+    background-color: rgba(27, 99, 153, .8);
+}
