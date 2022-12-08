@@ -18,29 +18,33 @@
 #MPLabel {
     background-color: transparent;
     color: whitesmoke;
-    font-size: smaller;
+    font-size: xx-small;
+    font-family: 'Consolas';
+    margin: 0px 0px 0px 20px;
 }
 
-#MPLabel {
+#CPLabel {
     background-color: transparent;
     color: whitesmoke;
-    font-size: smaller;
+    font-size: xx-small;
+    font-family: 'Consolas';
+    margin: 0px 0px 0px 10px;
 }
 
 #MainDirectory {
     border: 2px solid rgba(72, 84, 95, 1);
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(21, 24, 27, .9);
-    margin: 10px 10px 10px 20px;
+    margin: 0px 10px 10px 20px;
     padding: 4px;
     color: whitesmoke;
 }
 
 #CompDirectory {
     border: 2px solid rgba(72, 84, 95, 1);
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(21, 24, 27, .9);
-    margin: 10px 20px 10px 10px;
+    margin: 0px 20px 10px 10px;
     padding: 4px;
     color: whitesmoke;
 }
@@ -50,20 +54,24 @@
     border: 2px solid rgba(21, 24, 27, 1);
     border-radius: 10px;
     background-color: rgba(72, 84, 95, 1);
-    color:rgba(21, 24, 27, 1);
-    font-weight: bold;
+    color:black;
+    font-family: 'Calibri';
+    font-weight: 500;
+    font-size: 14px;
     padding: 10px;
-    margin: 0px 10px 10px 20px;
+    margin: 0px 10px 0px 20px;
 }
 
 #Button2 {
     border: 2px solid rgba(21, 24, 27, 1);
     border-radius: 10px;
     background-color: rgba(72, 84, 95, 1);
-    color:rgba(21, 24, 27, 1);
-    font-weight: bold;
+    color:black;
+    font-family: 'Calibri';
+    font-weight: 500; 
+    font-size: 14px;
     padding: 10px;
-    margin: 0px 20px 10px 10px;
+    margin: 0px 20px 0px 10px;
 }
 
 #ExitButton {
@@ -77,7 +85,7 @@
     border: 2px solid rgba(21, 24, 27, 1);
     border-radius: 10px;
     background-color: rgba(72, 84, 95, 1);
-    color:rgba(21, 24, 27, 1);
+    color:black;
     font-weight: bold;
     padding: 10px;
     margin: 10px 20px 10px 20px;
